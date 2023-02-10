@@ -1,4 +1,3 @@
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="en">
@@ -34,7 +33,7 @@
                         <li><a href="add_employee.jsp" class="nav-link px-2 text-white">ADD</a></li>
                         <li><a href="search.jsp" class="nav-link px-2 text-white">Search</a></li>
                         <li><a href="employeeDetails.jsp" class="nav-link px-2 text-white">Show</a></li>
-                        <li><a href="employeeDetails.jsp" class="nav-link px-2 text-white">Update</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Update</a></li>
 
                         <a class="nav-link px-2 text-bg-light">
                             WELCOME :
@@ -44,7 +43,7 @@
                     </c:if>
                     <c:if test="${login_check==null}">
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="login.jsp" class="nav-link px-2 text-white">Home</a></li>
+                            <li><a href="landingPage.jsp" class="nav-link px-2 text-white">Home</a></li>
                             <li><a href="login.jsp" class="nav-link px-2 text-white">ADD</a></li>
                             <li><a href="login.jsp" class="nav-link px-2 text-white">Search</a></li>
                             <li><a href="login.jsp" class="nav-link px-2 text-white">Show</a></li>
@@ -62,7 +61,7 @@
                             <a href="login.jsp">
                                 <button type="button" class="btn btn-outline-light me-2" >Login</button>
                             </a>
-                            <a href="signup.jsp">
+                            <a href="PreProssing">
                                 <button type="button" class="btn btn-warning">Sign-up</button>
                             </a>
                         </c:if>

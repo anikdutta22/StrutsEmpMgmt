@@ -8,3 +8,4 @@
 <!-- Kill the user's session -->
 <% session.invalidate(); %>
 <jsp:forward page="landingPage.jsp"/>
+

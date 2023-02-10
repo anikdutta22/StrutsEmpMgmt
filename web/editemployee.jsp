@@ -1,4 +1,3 @@
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="com.exavalu.models.Role"%>
 <%@page import="com.exavalu.models.Department"%>
@@ -105,7 +104,7 @@
                     </div>
 
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="salary" name="salary" value="${emp.getBasicSalary()}">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="salary" name="basicSalary" value="${emp.getBasicSalary()}">
                         <label for="floatingInput">Salary</label>
                     </div>
 
@@ -122,7 +121,7 @@
 
                     <button class="w-100 btn btn-lg btn-primary" type="submit">Save</button>
 
-                    <p class="mt-5 mb-3 text-muted">&copy; 2023-2024 by Anik Dutta</p>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2023-2024 by Rishav Dutta</p>
                 </form>           
             </main>
 

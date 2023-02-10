@@ -8,16 +8,23 @@
 
         <!-- Custom styles for this template -->
         <link href="css/signin.css" rel="stylesheet">
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                padding-top: 0px;
+            }
+        </style>
 
     </head>
 
     <body class="text-center">
+        <jsp:include page="menu.jsp"></jsp:include>
 
-
-        <main class="form-signin w-100 m-auto">
-            <form action="Login" method="post">
-                <img class="mb-4" src="images/flower-logo.jpg" alt="" width="200" height="200">
-                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <main class="form-signin w-100 m-auto">
+                <form action="Login" method="post">
+                    <img class="mb-4" src="images/flower-logo.jpg" alt="" width="200" height="200">
+                    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
                 <c:set var="msg" value="${ErrorMsg}"/>                   
                 <c:if test="${msg!=null}">
@@ -25,7 +32,7 @@
                         <c:out value="${msg}"/>
                     </div>
                 </c:if>
-                
+
                 <c:set var="msg1" value="${SuccessMsg}"/>                   
                 <c:if test="${msg1!=null}">
                     <div class="alert alert-success msg_style" role="alert">
